@@ -1,0 +1,113 @@
+:root {
+    --bg-dark: hsl(0, 0%, 5%);
+    --bg: hsl(0, 0%, 10%);
+    --bg-light: hsl(0, 0%, 15%);
+
+    --main-text: hsl(0, 0%, 85%);
+    --header-text: #8A6DC5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    color: var(--header-text);
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.6rem;
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    gap: 3.75rem;
+    margin-bottom: 8rem;
+}
+
+.student-card {
+    max-width: 24.375rem;
+    background-color: var(--bg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-container {
+    margin-bottom: 1.5rem;
+}
+
+.student-card,
+.text-container {
+    border-radius: 5px;
+}
+
+
+.text-container {
+    background-color: var(--bg-light);
+    padding: 1.5rem 1.25rem 1.25rem;
+
+}
+
+.student-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.student-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.student-name,
+.student-description {
+    color: var(--main-text);
+}
+
+.btn {
+    border-radius: 0.3125rem;
+    background: #5C3E9A;
+    color: var(--main-text);
+    color: #F2F2F2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 1.44rem 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
